@@ -115,5 +115,11 @@ namespace QLiSach
             dgvKH.DataSource = dt;
             
         }
+
+        private void btSPham_Click(object sender, EventArgs e)
+        {
+            SanPham fm = new SanPham();
+            fm.ShowDialog();
+        }
     }
 }

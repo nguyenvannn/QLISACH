@@ -50,6 +50,7 @@
             this.btXoa = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.txtTimMa = new System.Windows.Forms.TextBox();
+            this.btSPham = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKH)).BeginInit();
             this.SuspendLayout();
             // 
@@ -202,7 +203,7 @@
             // btTim
             // 
             this.btTim.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btTim.Location = new System.Drawing.Point(477, 156);
+            this.btTim.Location = new System.Drawing.Point(406, 151);
             this.btTim.Name = "btTim";
             this.btTim.Size = new System.Drawing.Size(106, 43);
             this.btTim.TabIndex = 12;
@@ -224,7 +225,7 @@
             // btXoa
             // 
             this.btXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btXoa.Location = new System.Drawing.Point(492, 21);
+            this.btXoa.Location = new System.Drawing.Point(498, 21);
             this.btXoa.Name = "btXoa";
             this.btXoa.Size = new System.Drawing.Size(106, 43);
             this.btXoa.TabIndex = 14;
@@ -250,11 +251,24 @@
             this.txtTimMa.Size = new System.Drawing.Size(230, 22);
             this.txtTimMa.TabIndex = 16;
             // 
+            // btSPham
+            // 
+            this.btSPham.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btSPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSPham.Location = new System.Drawing.Point(580, 148);
+            this.btSPham.Name = "btSPham";
+            this.btSPham.Size = new System.Drawing.Size(106, 43);
+            this.btSPham.TabIndex = 17;
+            this.btSPham.Text = "Sản Phẩm";
+            this.btSPham.UseVisualStyleBackColor = false;
+            this.btSPham.Click += new System.EventHandler(this.btSPham_Click);
+            // 
             // QLKH
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(837, 504);
+            this.Controls.Add(this.btSPham);
             this.Controls.Add(this.txtTimMa);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btXoa);
@@ -306,5 +320,6 @@
         private System.Windows.Forms.Button btXoa;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtTimMa;
+        private System.Windows.Forms.Button btSPham;
     }
 }
