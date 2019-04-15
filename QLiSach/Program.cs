@@ -17,8 +17,8 @@ namespace QLiSach
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new DangNhap());
-            //Application.Run(new QLKH());
-            Application.Run(new SanPham());
+            Application.Run(new QLKH());
+            //Application.Run(new SanPham());
         }
     }
 }

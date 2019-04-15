@@ -173,6 +173,7 @@
             this.btXoaSP.TabIndex = 5;
             this.btXoaSP.Text = "XÓA";
             this.btXoaSP.UseVisualStyleBackColor = true;
+            this.btXoaSP.Click += new System.EventHandler(this.btXoaSP_Click);
             // 
             // button1
             // 

@@ -63,5 +63,18 @@ namespace QLiSach
             MessageBox.Show("Đã thêm thành công");
             LoadSP();
         }
+
+        private void btXoaSP_Click(object sender, EventArgs e)
+        {
+            string sqlXoa = "DELETE FROM SanPham WHERE MaSP = @MaSP";
+            SqlCommand cmd = new SqlCommand(sqlXoa, con);
+
+            cmd.Parameters.AddWithValue("MaSP", txtMaSP.Text);
+            cmd.Parameters.AddWithValue("TenSP", txtTenSP.Text);
+            cmd.Parameters.AddWithValue("Dongia", txtDongia.Text);
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Đã xóa thành công");
+            LoadSP();
+        }
     }
 }
