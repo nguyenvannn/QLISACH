@@ -16,3 +16,13 @@ C:\Users\lanan\OneDrive\Máy tính\QLISACH\QLiSach\obj\Debug\QLiSach.csprojResol
 C:\Users\lanan\OneDrive\Máy tính\QLISACH\QLiSach\obj\Debug\QLiSach.Properties.Resources.resources
 C:\Users\lanan\OneDrive\Máy tính\QLISACH\QLiSach\obj\Debug\QLiSach.QLKH.resources
 C:\Users\lanan\OneDrive\Máy tính\QLISACH\QLiSach\obj\Debug\QLiSach.csproj.GenerateResource.Cache
+C:\Users\Van Nguyen\Desktop\QLISACH\QLiSach\bin\Debug\QLiSach.exe.config
+C:\Users\Van Nguyen\Desktop\QLISACH\QLiSach\obj\Debug\QLiSach.exe
+C:\Users\Van Nguyen\Desktop\QLISACH\QLiSach\obj\Debug\QLiSach.pdb
+C:\Users\Van Nguyen\Desktop\QLISACH\QLiSach\bin\Debug\QLiSach.exe
+C:\Users\Van Nguyen\Desktop\QLISACH\QLiSach\bin\Debug\QLiSach.pdb
+C:\Users\Van Nguyen\Desktop\QLISACH\QLiSach\obj\Debug\QLiSach.csprojResolveAssemblyReference.cache
+C:\Users\Van Nguyen\Desktop\QLISACH\QLiSach\obj\Debug\QLiSach.DangNhap.resources
+C:\Users\Van Nguyen\Desktop\QLISACH\QLiSach\obj\Debug\QLiSach.Properties.Resources.resources
+C:\Users\Van Nguyen\Desktop\QLISACH\QLiSach\obj\Debug\QLiSach.QLKH.resources
+C:\Users\Van Nguyen\Desktop\QLISACH\QLiSach\obj\Debug\QLiSach.csproj.GenerateResource.Cache

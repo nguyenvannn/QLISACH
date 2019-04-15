@@ -14,3 +14,11 @@ C:\Users\lanan\OneDrive\Máy tính\QLISACH\UnitTest_QLSach\bin\Debug\QLiSach.pdb
 C:\Users\lanan\OneDrive\Máy tính\QLISACH\UnitTest_QLSach\obj\Debug\UnitTest_QLSach.csprojResolveAssemblyReference.cache
 C:\Users\lanan\OneDrive\Máy tính\QLISACH\UnitTest_QLSach\obj\Debug\UnitTest_QLSach.dll
 C:\Users\lanan\OneDrive\Máy tính\QLISACH\UnitTest_QLSach\obj\Debug\UnitTest_QLSach.pdb
+C:\Users\Van Nguyen\Desktop\QLISACH\UnitTest_QLSach\bin\Debug\UnitTest_QLSach.dll
+C:\Users\Van Nguyen\Desktop\QLISACH\UnitTest_QLSach\bin\Debug\UnitTest_QLSach.pdb
+C:\Users\Van Nguyen\Desktop\QLISACH\UnitTest_QLSach\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Van Nguyen\Desktop\QLISACH\UnitTest_QLSach\bin\Debug\QLiSach.exe
+C:\Users\Van Nguyen\Desktop\QLISACH\UnitTest_QLSach\bin\Debug\QLiSach.pdb
+C:\Users\Van Nguyen\Desktop\QLISACH\UnitTest_QLSach\obj\Debug\UnitTest_QLSach.csprojResolveAssemblyReference.cache
+C:\Users\Van Nguyen\Desktop\QLISACH\UnitTest_QLSach\obj\Debug\UnitTest_QLSach.dll
+C:\Users\Van Nguyen\Desktop\QLISACH\UnitTest_QLSach\obj\Debug\UnitTest_QLSach.pdb
