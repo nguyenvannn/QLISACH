@@ -76,5 +76,36 @@ namespace QLiSach
             MessageBox.Show("Đã xóa thành công");
             LoadSP();
         }
+
+        private void btSuaSP_Click(object sender, EventArgs e)
+        {
+            string sqlSua = "UPDATE SanPham SET  TenSP = @TenSP, Dongia = @Dongia WHERE MaSP = @MaSP";
+            SqlCommand cmd = new SqlCommand(sqlSua, con);
+
+            cmd.Parameters.AddWithValue("MaSP", txtMaSP.Text);
+            cmd.Parameters.AddWithValue("TenSP", txtTenSP.Text);
+            cmd.Parameters.AddWithValue("Dongia", txtDongia.Text);
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Đã sửa thành công");
+            LoadSP();
+        }
+
+        private void btTimMa_Click(object sender, EventArgs e)
+        {
+            string sqlTim = "SELECT *FROM SanPham WHERE MaSP = @MaSP";
+            SqlCommand cmd = new SqlCommand(sqlTim, con);
+
+            cmd.Parameters.AddWithValue("MaSP", txtMaSP.Text);
+            cmd.Parameters.AddWithValue("TenSP", txtTenSP.Text);
+            cmd.Parameters.AddWithValue("Dongia", txtDongia.Text);
+            cmd.ExecuteNonQuery();
+            SqlDataReader dr = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            MessageBox.Show("Tìm sản phẩm thành công");
+
+            dt.Load(dr);
+            dgvSanPham.DataSource = dt;
+
+        }
     }
 }

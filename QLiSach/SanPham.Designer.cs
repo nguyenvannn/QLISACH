@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.dgvSanPham = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -41,11 +44,8 @@
             this.btSuaSP = new System.Windows.Forms.Button();
             this.btThoát = new System.Windows.Forms.Button();
             this.btXoaSP = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btTimMa = new System.Windows.Forms.Button();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSanPham)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -62,6 +62,24 @@
             this.dgvSanPham.Size = new System.Drawing.Size(387, 270);
             this.dgvSanPham.TabIndex = 0;
             this.dgvSanPham.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSanPham_CellClick);
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "MaSP";
+            this.Column1.HeaderText = "Mã SP";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "TenSP";
+            this.Column2.HeaderText = "Tên SP";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "Dongia";
+            this.Column3.HeaderText = "Đơn Giá";
+            this.Column3.Name = "Column3";
             // 
             // label1
             // 
@@ -153,6 +171,7 @@
             this.btSuaSP.TabIndex = 5;
             this.btSuaSP.Text = "SỬA";
             this.btSuaSP.UseVisualStyleBackColor = true;
+            this.btSuaSP.Click += new System.EventHandler(this.btSuaSP_Click);
             // 
             // btThoát
             // 
@@ -175,15 +194,16 @@
             this.btXoaSP.UseVisualStyleBackColor = true;
             this.btXoaSP.Click += new System.EventHandler(this.btXoaSP_Click);
             // 
-            // button1
+            // btTimMa
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(424, 288);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(86, 27);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "TÌM KIẾM";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btTimMa.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btTimMa.Location = new System.Drawing.Point(424, 288);
+            this.btTimMa.Name = "btTimMa";
+            this.btTimMa.Size = new System.Drawing.Size(86, 27);
+            this.btTimMa.TabIndex = 5;
+            this.btTimMa.Text = "TÌM KIẾM";
+            this.btTimMa.UseVisualStyleBackColor = true;
+            this.btTimMa.Click += new System.EventHandler(this.btTimMa_Click);
             // 
             // txtTimKiem
             // 
@@ -193,24 +213,6 @@
             this.txtTimKiem.Size = new System.Drawing.Size(115, 22);
             this.txtTimKiem.TabIndex = 6;
             // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "MaSP";
-            this.Column1.HeaderText = "Mã SP";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "TenSP";
-            this.Column2.HeaderText = "Tên SP";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "Dongia";
-            this.Column3.HeaderText = "Đơn Giá";
-            this.Column3.Name = "Column3";
-            // 
             // SanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -218,7 +220,7 @@
             this.ClientSize = new System.Drawing.Size(643, 346);
             this.Controls.Add(this.txtTimKiem);
             this.Controls.Add(this.btThoát);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btTimMa);
             this.Controls.Add(this.btSuaSP);
             this.Controls.Add(this.btXoaSP);
             this.Controls.Add(this.btThemSP);
@@ -256,7 +258,7 @@
         private System.Windows.Forms.Button btSuaSP;
         private System.Windows.Forms.Button btThoát;
         private System.Windows.Forms.Button btXoaSP;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btTimMa;
         private System.Windows.Forms.TextBox txtTimKiem;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
