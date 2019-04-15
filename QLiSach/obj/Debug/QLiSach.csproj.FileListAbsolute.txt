@@ -1,0 +1,9 @@
+c:\users\lanan\onedrive\documents\visual studio 2015\Projects\QLiSach\QLiSach\bin\Debug\QLiSach.exe.config
+c:\users\lanan\onedrive\documents\visual studio 2015\Projects\QLiSach\QLiSach\obj\Debug\QLiSach.csprojResolveAssemblyReference.cache
+c:\users\lanan\onedrive\documents\visual studio 2015\Projects\QLiSach\QLiSach\obj\Debug\QLiSach.Properties.Resources.resources
+c:\users\lanan\onedrive\documents\visual studio 2015\Projects\QLiSach\QLiSach\obj\Debug\QLiSach.QLKH.resources
+c:\users\lanan\onedrive\documents\visual studio 2015\Projects\QLiSach\QLiSach\obj\Debug\QLiSach.csproj.GenerateResource.Cache
+c:\users\lanan\onedrive\documents\visual studio 2015\Projects\QLiSach\QLiSach\bin\Debug\QLiSach.exe
+c:\users\lanan\onedrive\documents\visual studio 2015\Projects\QLiSach\QLiSach\bin\Debug\QLiSach.pdb
+c:\users\lanan\onedrive\documents\visual studio 2015\Projects\QLiSach\QLiSach\obj\Debug\QLiSach.exe
+c:\users\lanan\onedrive\documents\visual studio 2015\Projects\QLiSach\QLiSach\obj\Debug\QLiSach.pdb
