@@ -50,5 +50,18 @@ namespace QLiSach
             txtDongia.Text = dgvSanPham.Rows[row].Cells[2].Value.ToString();
             
         }
+
+        private void btThemSP_Click(object sender, EventArgs e)
+        {
+            string sql = "INSERT INTO SanPham VALUES (@MaSP, @TenSP , @Dongia)";
+            SqlCommand cmd = new SqlCommand(sql, con);
+            cmd.Parameters.AddWithValue("MaSP", txtMaSP.Text);
+            cmd.Parameters.AddWithValue("TenSP", txtTenSP.Text);
+            cmd.Parameters.AddWithValue("Dongia", txtDongia.Text);
+            
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Đã thêm thành công");
+            LoadSP();
+        }
     }
 }

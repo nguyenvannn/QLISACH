@@ -142,6 +142,7 @@
             this.btThemSP.TabIndex = 5;
             this.btThemSP.Text = "THÊM";
             this.btThemSP.UseVisualStyleBackColor = true;
+            this.btThemSP.Click += new System.EventHandler(this.btThemSP_Click);
             // 
             // btSuaSP
             // 
