@@ -27,6 +27,37 @@ namespace UnitTest_QLSach
             Assert.AreEqual(expected, actual);
         }
         [TestMethod]
+        public void MaKH_Dai()
+        {
+            string actual = CheckThem.checkThem("KH012", "Anh", "BC", "64765", "64745");
+            string expected = "1";
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void Hoten_dai()
+        {
+            string actual = CheckThem.checkThem("KH12", "Anhjdjksdjkhdj", "BC", "64765", "64745");
+            string expected = "1";
+            Assert.AreEqual(expected, actual);
+        }
+        [TestMethod]
+        public void DT_Dai()
+        {
+            string actual = CheckThem.checkThem("KH12", "Anh", "BC", "6543544765", "64745");
+            string expected = "1";
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void Email_dai()
+        {
+            string actual = CheckThem.checkThem("KH12", "Anh", "BC", "64765", "6474646546565465");
+            string expected = "1";
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
         public void BotrongMaKH()
         {
             string actual = CheckThem.checkThem("", "Anh", "BC", "64765", "64745");
