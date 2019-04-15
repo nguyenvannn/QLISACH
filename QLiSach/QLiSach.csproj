@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CheckDangNhap.cs" />
+    <Compile Include="CheckSua.cs" />
     <Compile Include="CheckTim.cs" />
     <Compile Include="CheckThem.cs" />
     <Compile Include="CheckXoa.cs" />
