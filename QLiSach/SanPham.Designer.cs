@@ -182,6 +182,7 @@
             this.btThoát.TabIndex = 5;
             this.btThoát.Text = "THOÁT";
             this.btThoát.UseVisualStyleBackColor = true;
+            this.btThoát.Click += new System.EventHandler(this.btThoát_Click);
             // 
             // btXoaSP
             // 

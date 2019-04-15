@@ -39,7 +39,9 @@ namespace QLiSach
 
         private void SanPham_FormClosing(object sender, FormClosingEventArgs e)
         {
-            con.Close();
+            if (MessageBox.Show("Bạn muốn thoát form Sản Phẩm?", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+            == DialogResult.No)
+                e.Cancel = true;
         }
 
         private void dgvSanPham_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -106,6 +108,12 @@ namespace QLiSach
             dt.Load(dr);
             dgvSanPham.DataSource = dt;
 
+        }
+
+        private void btThoát_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Bạn có muốn thoát form Sản Phẩm");
+            this.Close();
         }
     }
 }

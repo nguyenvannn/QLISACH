@@ -30,7 +30,9 @@ namespace QLiSach
 
         private void QLKH_FormClosing(object sender, FormClosingEventArgs e)
         {
-            con.Close();
+            if (MessageBox.Show("Bạn muốn thoát form Khách Hàng?", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+            == DialogResult.No)
+                e.Cancel = true;
         }
 
         public void LoadKH()
@@ -120,6 +122,12 @@ namespace QLiSach
         {
             SanPham fm = new SanPham();
             fm.ShowDialog();
+        }
+
+        private void btThoat_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Bạn có muốn thoát form Quản Lý Khách Hàng");
+            this.Close();
         }
     }
 }
