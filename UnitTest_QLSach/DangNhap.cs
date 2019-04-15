@@ -21,6 +21,14 @@ namespace UnitTest_QLSach
             Assert.AreEqual(expected, actual);
 
         }
-        
+        [TestMethod]
+        public void Test_Khongnhapmatkhau()
+        {
+            string actual = CheckDangNhap.ktdangnhap("admin", "");
+
+            string expected = "1";
+            Assert.AreEqual(expected, actual);
+
+        }
     }
 }
