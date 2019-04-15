@@ -53,6 +53,7 @@ namespace QLiSach
             cmd.Parameters.AddWithValue("DienThoai", txtDT.Text);
             cmd.Parameters.AddWithValue("Email", txtEmail.Text);
             cmd.ExecuteNonQuery();
+            MessageBox.Show("Đã thêm thành công");
             LoadKH();
 
         }
@@ -79,6 +80,19 @@ namespace QLiSach
             txtDiaChi.Text = dgvKH.Rows[row].Cells[2].Value.ToString();
             txtDT.Text = dgvKH.Rows[row].Cells[3].Value.ToString();
             txtEmail.Text = dgvKH.Rows[row].Cells[4].Value.ToString();
+        }
+
+        private void btSua_Click(object sender, EventArgs e)
+        {
+            string sqlSua = "UPDATE KhachHang SET  HoTenKH = @HoTenKH, DiaChi = @DiaChi , DienThoai = @DienThoai, Email = @Email WHERE MaKH = @MaKH";
+            SqlCommand cmd = new SqlCommand(sqlSua, con);
+            cmd.Parameters.AddWithValue("MaKH", txtMaKH.Text);
+            cmd.Parameters.AddWithValue("HoTenKH", txtHoTen.Text);
+            cmd.Parameters.AddWithValue("DiaChi", txtDiaChi.Text);
+            cmd.Parameters.AddWithValue("DienThoai", txtDT.Text);
+            cmd.Parameters.AddWithValue("Email", txtEmail.Text);
+            cmd.ExecuteNonQuery();
+            LoadKH();
         }
     }
 }
