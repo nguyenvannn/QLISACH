@@ -208,6 +208,7 @@
             this.btTim.TabIndex = 12;
             this.btTim.Text = "Tìm";
             this.btTim.UseVisualStyleBackColor = true;
+            this.btTim.Click += new System.EventHandler(this.btTim_Click);
             // 
             // btSua
             // 

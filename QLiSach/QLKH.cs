@@ -96,5 +96,24 @@ namespace QLiSach
             MessageBox.Show("Đã sửa thành công");
             LoadKH();
         }
+
+        private void btTim_Click(object sender, EventArgs e)
+        {
+            string sqlTim = "SELECT *FROM KhachHang WHERE MaKH = @MaKH";
+            SqlCommand cmd = new SqlCommand(sqlTim, con);
+            cmd.Parameters.AddWithValue("MaKH", txtTimMa.Text);
+            cmd.Parameters.AddWithValue("HoTenKH", txtHoTen.Text);
+            cmd.Parameters.AddWithValue("DiaChi", txtDiaChi.Text);
+            cmd.Parameters.AddWithValue("DienThoai", txtDT.Text);
+            cmd.Parameters.AddWithValue("Email", txtEmail.Text);
+            cmd.ExecuteNonQuery();
+            SqlDataReader dr = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            MessageBox.Show("Tìm khách hàng thành công");
+
+            dt.Load(dr);
+            dgvKH.DataSource = dt;
+            
+        }
     }
 }
