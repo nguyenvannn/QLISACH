@@ -7,3 +7,6 @@ c:\users\lanan\onedrive\documents\visual studio 2015\Projects\QLiSach\QLiSach\bi
 c:\users\lanan\onedrive\documents\visual studio 2015\Projects\QLiSach\QLiSach\bin\Debug\QLiSach.pdb
 c:\users\lanan\onedrive\documents\visual studio 2015\Projects\QLiSach\QLiSach\obj\Debug\QLiSach.exe
 c:\users\lanan\onedrive\documents\visual studio 2015\Projects\QLiSach\QLiSach\obj\Debug\QLiSach.pdb
+C:\Users\lanan\OneDrive\Máy tính\QLISACH\QLiSach\bin\Debug\QLiSach.exe.config
+C:\Users\lanan\OneDrive\Máy tính\QLISACH\QLiSach\obj\Debug\QLiSach.exe
+C:\Users\lanan\OneDrive\Máy tính\QLISACH\QLiSach\obj\Debug\QLiSach.pdb

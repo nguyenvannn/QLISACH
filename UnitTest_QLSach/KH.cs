@@ -26,5 +26,12 @@ namespace UnitTest_QLSach
             string expected = "0";
             Assert.AreEqual(expected, actual);
         }
+        [TestMethod]
+        public void BotrongMaKH()
+        {
+            string actual = CheckThem.checkThem("", "Anh", "BC", "64765", "64745");
+            string expected = "1";
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
