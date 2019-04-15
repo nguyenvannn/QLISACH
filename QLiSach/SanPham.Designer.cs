@@ -43,6 +43,9 @@
             this.btXoaSP = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSanPham)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -50,6 +53,10 @@
             // dgvSanPham
             // 
             this.dgvSanPham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSanPham.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3});
             this.dgvSanPham.Location = new System.Drawing.Point(7, 6);
             this.dgvSanPham.Name = "dgvSanPham";
             this.dgvSanPham.Size = new System.Drawing.Size(387, 270);
@@ -183,6 +190,24 @@
             this.txtTimKiem.Size = new System.Drawing.Size(115, 22);
             this.txtTimKiem.TabIndex = 6;
             // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "MaSP";
+            this.Column1.HeaderText = "Mã SP";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "TenSP";
+            this.Column2.HeaderText = "Tên SP";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "Dongia";
+            this.Column3.HeaderText = "Đơn Giá";
+            this.Column3.Name = "Column3";
+            // 
             // SanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -230,5 +255,8 @@
         private System.Windows.Forms.Button btXoaSP;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtTimKiem;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
     }
 }
