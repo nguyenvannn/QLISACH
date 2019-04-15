@@ -59,8 +59,8 @@ namespace QLiSach
 
         private void btXoa_Click(object sender, EventArgs e)
         {
-            string sql = "DELETE FROM KhachHang WHERE MaKH = @MaKH";
-            SqlCommand cmd = new SqlCommand(sql, con);
+            string sqlXoa = "DELETE FROM KhachHang WHERE MaKH = @MaKH";
+            SqlCommand cmd = new SqlCommand(sqlXoa, con);
             cmd.Parameters.AddWithValue("MaKH", txtMaKH.Text);
             cmd.Parameters.AddWithValue("HoTenKH", txtHoTen.Text);
             cmd.Parameters.AddWithValue("DiaChi", txtDiaChi.Text);
