@@ -54,5 +54,12 @@ namespace UnitTest_QLSach
             string expected = "1";
             Assert.AreEqual(expected, actual);
         }
+        [TestMethod]
+        public void TimThanhCong()
+        {
+            string actual = CheckTim.checkTim("KH01");
+            string expected = "0";
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
