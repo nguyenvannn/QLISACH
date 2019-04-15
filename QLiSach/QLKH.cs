@@ -69,5 +69,16 @@ namespace QLiSach
             cmd.ExecuteNonQuery();
             LoadKH();
         }
+
+        
+        private void dgvKH_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int row = e.RowIndex;
+            txtMaKH.Text = dgvKH.Rows[row].Cells[0].Value.ToString();
+            txtHoTen.Text = dgvKH.Rows[row].Cells[1].Value.ToString();
+            txtDiaChi.Text = dgvKH.Rows[row].Cells[2].Value.ToString();
+            txtDT.Text = dgvKH.Rows[row].Cells[3].Value.ToString();
+            txtEmail.Text = dgvKH.Rows[row].Cells[4].Value.ToString();
+        }
     }
 }
