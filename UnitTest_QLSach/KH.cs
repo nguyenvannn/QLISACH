@@ -40,5 +40,12 @@ namespace UnitTest_QLSach
             string expected = "0";
             Assert.AreEqual(expected, actual);
         }
+        [TestMethod]
+        public void XoaThanhCong()
+        {
+            string actual = CheckXoa.checkXoa("KH01");
+            string expected = "0";
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
