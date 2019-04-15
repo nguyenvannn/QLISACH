@@ -19,31 +19,7 @@ namespace QLiSach
             InitializeComponent();
         }
         SqlConnection con;
-
-        //private void SanPham_Load(object sender, EventArgs e)
-        //{
-        //    string cnStr = ConfigurationManager.ConnectionStrings["cnStr"].ConnectionString.ToString();
-        //    con = new SqlConnection(cnStr);
-        //    con.Open();
-        //    LoadKH();
-        //}
-
-
-        //private void QLKH_FormClosing(object sender, FormClosingEventArgs e)
-        //{
-        //    con.Close();
-        //}
-
-        //public void LoadKH()
-        //{
-        //    string sql = "SELECT * FROM KhachHang";
-        //    SqlCommand cmd = new SqlCommand(sql, con);
-        //    SqlDataReader dr = cmd.ExecuteReader();
-        //    DataTable dt = new DataTable();
-        //    dt.Load(dr);
-        //    dgvKH.DataSource = dt;
-        //}
-
+        
         private void SanPham_Load(object sender, EventArgs e)
         {
             string cnStr = ConfigurationManager.ConnectionStrings["cnStr"].ConnectionString.ToString();
@@ -64,6 +40,15 @@ namespace QLiSach
         private void SanPham_FormClosing(object sender, FormClosingEventArgs e)
         {
             con.Close();
+        }
+
+        private void dgvSanPham_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int row = e.RowIndex;
+            txtMaSP.Text = dgvSanPham.Rows[row].Cells[0].Value.ToString();
+            txtTenSP.Text = dgvSanPham.Rows[row].Cells[1].Value.ToString();
+            txtDongia.Text = dgvSanPham.Rows[row].Cells[2].Value.ToString();
+            
         }
     }
 }
