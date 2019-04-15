@@ -68,6 +68,7 @@ namespace QLiSach
             cmd.Parameters.AddWithValue("DienThoai", txtDT.Text);
             cmd.Parameters.AddWithValue("Email", txtEmail.Text);
             cmd.ExecuteNonQuery();
+            MessageBox.Show("Đã xóa thành công");
             LoadKH();
         }
 
@@ -92,6 +93,7 @@ namespace QLiSach
             cmd.Parameters.AddWithValue("DienThoai", txtDT.Text);
             cmd.Parameters.AddWithValue("Email", txtEmail.Text);
             cmd.ExecuteNonQuery();
+            MessageBox.Show("Đã sửa thành công");
             LoadKH();
         }
     }
