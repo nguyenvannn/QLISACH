@@ -75,5 +75,12 @@ namespace UnitTest_QLSach
             string expected = "0";
             Assert.AreEqual(expected, actual);
         }
+        [TestMethod]
+        public void SuaKhongThanhCong()
+        {
+            string actual = CheckSua.checkSua("", "Anh", "BC", "4535", "43543");
+            string expected = "1";
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
