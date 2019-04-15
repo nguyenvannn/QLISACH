@@ -204,6 +204,8 @@
             this.Controls.Add(this.label1);
             this.Name = "SanPham";
             this.Text = "SanPham";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SanPham_FormClosing);
+            this.Load += new System.EventHandler(this.SanPham_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSanPham)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
