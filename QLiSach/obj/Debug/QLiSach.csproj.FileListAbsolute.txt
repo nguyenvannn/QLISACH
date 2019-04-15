@@ -26,3 +26,4 @@ C:\Users\Van Nguyen\Desktop\QLISACH\QLiSach\obj\Debug\QLiSach.DangNhap.resources
 C:\Users\Van Nguyen\Desktop\QLISACH\QLiSach\obj\Debug\QLiSach.Properties.Resources.resources
 C:\Users\Van Nguyen\Desktop\QLISACH\QLiSach\obj\Debug\QLiSach.QLKH.resources
 C:\Users\Van Nguyen\Desktop\QLISACH\QLiSach\obj\Debug\QLiSach.csproj.GenerateResource.Cache
+C:\Users\Van Nguyen\Desktop\QLISACH\QLiSach\obj\Debug\QLiSach.SanPham.resources
